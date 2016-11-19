@@ -1,0 +1,42 @@
+#mainwrapper {
+	background :url(../img/background.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+}
+
+#mainwrapper-inner {
+	background: rgba(0, 0, 0, 0.5);
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+}
+
+#mainwrapper-inner h1 {
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	font-family: 'Futura Md BT', sans-serif;
+	margin-bottom: 30px;
+}
+
+.logo {
+	width: 100%;
+	width: 40%;
+	margin: 120px 30% 0 30%;
+}
+
+#form-group {
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
+
+#form-group .fa-search:before {
+	color: white;
+}
+
+.btn-landing {
+	width: 40%;
+	margin: 30px 30% 0 30%;
+}

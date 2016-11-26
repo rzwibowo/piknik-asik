@@ -9,6 +9,7 @@
     <meta name="rizky, cahyo" content="PiknikBareng">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="shortcut icon" href="./favicon.png" />
 </head>
@@ -16,23 +17,115 @@
 <body>
     <div id="mainwrapper">
         <div id="mainwrapper-inner">
-            <div class="logo"><img src="img/logo.png" class="img-responsive"></div>
-            <h1>Start Travelling Together...</h1>
-            <div id="form-group">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text" class="form-control" id="search-city" placeholder="cari wisata">
-                            <div class="input-group-addon">
-                                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            <nav class="navbar navbar-default">
+                <div class="landing-container container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo-header"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <form class="navbar-form navbar-left">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search place">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                            <button class="btn btn-success login-button">Log in</button>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="content-outer">
+                <div id="content">
+                    <div class="landing-container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                                <h1>
+                                Jangan Panik! Mari Piknik
+                            </h1>
+                                <p>
+                                    Convenience store youtube chrome industrial grade tanto-ware ablative refrigerator girl. Systema DIY advert grenade media military-grade sensory weathered engine girl neural garage silent free-market drugs vinyl lights. DIY nodal point math-semiotics vinyl tower RAF fetishism sunglasses carbon computer. Dead car fetishism concrete otaku footage city geodesic. Digital Tokyo engine chrome garage cardboard hacker DIY vehicle. Receding nano-office spook neon franchise tank-traps. Katana youtube cardboard futurity sign face forwards DIY apophenia pre-rain sentient claymore mine assassin courier hotdog. Shoes range-rover receding plastic refrigerator faded wristwatch fluidity.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <form role="form">
+                                    <h2>Sign Up</h2>
+                                    <hr class="colorgraph">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="user name" id="user_name" class="form-control input-lg" placeholder="User Name" tabindex="3">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4 col-sm-3 col-md-3">
+                                            <span class="button-checkbox">
+                                            <button type="button" class="btn btn-agree" data-color="info" tabindex="7">I Agree</button>
+                                            <input type="checkbox" name="t_and_c" id="t_and_c" class="hidden" value="1">
+                                        </span>
+                                        </div>
+                                        <div class="col-xs-8 col-sm-9 col-md-9">
+                                            By clicking <strong class="label label-primary">Register</strong>, you agree to the <a class="term-link" href="#" data-toggle="modal" data-target="#t_and_c_m">Terms and Conditions</a>
+                                        </div>
+                                    </div>
+                                    <hr class="colorgraph">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7">
+                                        </div>
+                                        <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Sign In</a></div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </form>
-            </div>
-            <div id="button-group">
-            	<button class="btn-landing btn btn-default btn-lg">Login</button>
-            	<button class="btn-landing btn btn-primary btn-lg">SignUp</button>
+                </div>
+                <footer id="landing-footer">
+                    <div class="landing-footer-inner landing-container">
+                        <div class="col-md-6 col-lg-6">
+                            <p>© 2016 PiknikAsik, Inc</p>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <ul>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>

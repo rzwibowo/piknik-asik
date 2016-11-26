@@ -1,0 +1,24 @@
+.navbar-default {
+    background-color: #3498db;
+    border-radius: 0px;
+}
+
+.logo-header {
+    height: 40px;
+    position: relative;
+    top: -12px;
+}
+
+.nav a:hover {
+    background-color: #2ecc71 !important;
+    color: white !important;
+    font-weight: 900;
+}
+
+.width-nav {
+	width: 700px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+}

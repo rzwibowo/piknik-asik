@@ -1,3 +1,6 @@
+body {
+	font-family: 'Roboto', sans-serif, arial;
+}
 .navbar-default {
     background-color: #3498db;
     border-radius: 0px;
@@ -19,6 +22,14 @@
 	width: 700px;
 }
 
+.rating-p {
+	display: flex;
+	width: 100%;
+}
 .navbar-default .navbar-nav > li > a {
 	color: white;
+}
+.rating, .total-rate {
+	width: 50%;
+	margin: 10px 0;
 }

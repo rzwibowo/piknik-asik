@@ -1,0 +1,123 @@
+body {
+	background-color: #ecf0f1; 
+}
+.logo-header {
+    height: 10px;
+    position: relative;
+    top: -12px;
+}
+.navbar-default {
+    margin: 0 -16px 30px -16px;
+    background-color: #3498db;
+    border-radius: 0px !important;
+}
+.logo-header {
+    height: 40px;
+    position: relative;
+    top: -12px;
+}
+
+.form-width-outer {
+    width: calc( 100% - 230px - 226px);
+}
+
+.input-group {
+    width: 100%
+}
+
+#input-width {
+    width: 80%;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white !important;
+}
+
+.nav a:hover {
+    background-color: #2ecc71 !important;
+    color: white !important;
+    font-weight: 900;
+}
+@media (max-width: 767px) {
+    .form-width-outer {
+        width: 100%;
+    }
+    .icon-bar {
+        background-color: white !important;
+    }
+    .navbar-form { 
+        padding: 0px;
+        margin :8px 0;
+    }
+    .input-group {
+        width: 100%;
+    }
+    #input-width {
+        width: calc(100% - 39px);
+    }
+    .caret {
+        display: none;
+    }
+    .navbar-collapse {
+        max-height: 100%;
+    }
+    .li-item {
+        color: white !important;
+    }
+}
+.wadahGambar {
+	margin-top: 0;
+	height: 240px;
+	width: 100%;
+	overflow: hidden;
+}
+.wadahGambar .gbrBesar {
+	width: 1366px;
+}
+.namaWisata {
+	background: rgba(0, 0, 0, .5);
+	width: auto;
+	height: auto;
+	padding: 1px 10px;
+	position: absolute;
+	top: 0;
+	left: 10%;
+}
+.namaWisata h3 {
+	font-size: 1em;
+	color: white;
+}
+.tombolGallery {
+	position: absolute;
+	bottom: 1%;
+	right: 10%;
+}
+.otherloc {
+	margin: 10px 10px;
+}
+.img-otherloc-container {
+	margin: 20px 20px;
+	overflow: hidden;
+	padding: 0 0;
+	width: 235px;
+	height: 150px;
+	border-radius: 5px 5px 5px 5px;
+}
+.img-otherloc-container img {
+	width: 232px;
+}
+.img-otherloc-container a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	background-color: #3498db;
+	position: absolute;
+	width: 232px;
+	transform: translateY(-40px);
+	padding: 10px 10px;
+	border-radius: 0 0 5px 5px;
+}
+.img-otherloc-container a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}

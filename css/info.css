@@ -70,6 +70,7 @@ body {
 	height: 240px;
 	width: 100%;
 	overflow: hidden;
+	transform: translateY(-31px);
 }
 .wadahGambar .gbrBesar {
 	width: 1366px;
@@ -84,7 +85,7 @@ body {
 	left: 10%;
 }
 .namaWisata h3 {
-	font-size: 1em;
+	font-size: 1.5em;
 	color: white;
 }
 .tombolGallery {
@@ -99,7 +100,7 @@ body {
 	margin: 20px 20px;
 	overflow: hidden;
 	padding: 0 0;
-	width: 235px;
+	width: 232px;
 	height: 150px;
 	border-radius: 5px 5px 5px 5px;
 }
@@ -120,4 +121,41 @@ body {
 .img-otherloc-container a:hover {
 	text-decoration: underline;
 	font-weight: bold;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+.feedback {
+	border-radius: 2px;
+	background-color: white;
+	padding: 30px 30px;
+	margin: 5px;
+}
+.feedback img {
+	width: 60px;
+	border-radius: 50%;
+	float:left;
+}
+.feedback a {
+	float:left;
+	margin-left:10px;
+	font-weight:bold;
+}
+.feedback .rate-user {
+	margin-left: 30px;
+}
+.feedback .komentar {
+	transform: translateX(10px);
+	margin-top: 10px;
 }

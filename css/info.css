@@ -94,7 +94,7 @@ body {
 	right: 10%;
 }
 .otherloc {
-	margin: 10px 10px;
+	width: 22%;
 }
 .img-otherloc-container {
 	margin: 20px 20px;
@@ -136,6 +136,12 @@ body {
    content: "\2605";
    position: absolute;
 }
+.feedback-col{
+	margin: 30px 10px;
+}
+.info-kondisi {
+	padding: 10px 10px;
+}
 .feedback {
 	border-radius: 2px;
 	background-color: white;
@@ -158,4 +164,39 @@ body {
 .feedback .komentar {
 	transform: translateX(10px);
 	margin-top: 10px;
+}
+.grup-join {
+	width: 22%;
+}
+.grup {
+	border-radius: 2px;
+	background-color: white;
+	padding: 30px 30px;
+	margin: 5px;
+}
+.grup img {
+	width: 20px;
+	border-radius: 50%;
+	float: left;
+	margin: 0px 5px 0px 0px;
+}
+.grup .more-people {
+	width: 20px;
+	border-radius: 50%;
+	float: left;
+	margin: 0px 5px 0px 0px;
+	background-color: rgb(153, 0, 204);
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+}
+.grup .join {
+	background-color: #3498db;
+	clear: both;
+	color: white;
+	font-weight: bold;
+	transform: translateY(20px);
+}
+.grup .ikon {
+	color: #3498db;
 }

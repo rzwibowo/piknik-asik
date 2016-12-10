@@ -55,6 +55,44 @@ body {
     background-color: red;
 }
 
+#obrollan {
+    cursor: pointer;
+    position: fixed;
+    z-index: 12000;
+    width: 250px;
+    right: 0%;
+    bottom: 0%;
+    border: 1px solid #eaeaea;
+    background-color: white;
+}
+
+.icon-obrollan {
+    color: green;
+}
+
+.obrollan-inner {
+    padding: 8px;
+}
+
+#obrollan-content {
+    display: none;
+    margin: 0px;
+    padding: 8px;
+    background-color: #eaeaea;
+}
+
+.obrollan-item {
+    padding: 4px;
+    list-style: none;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.avatar {
+    width: 30px;
+    height: auto;
+    margin-right: 16px;
+}
+
 #landing-footer {
     border-top: 1px solid #eaeaea;
     height: 50px;

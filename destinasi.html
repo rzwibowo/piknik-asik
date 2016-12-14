@@ -50,10 +50,19 @@
                                         <li><a href="#" class="li-item">One more separated link</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#"><i class="fa fa-user"></i></a></li>
-                                <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+                                <li><a href="#" class="profil-nav"><i class="fa fa-user"></i></a></li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-togglen" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i><span class="caret"></span></a>
+                                    <a href="#" class="dropdown-togglen msg-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-envelope-o"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <h4 style="text-align: center; border-bottom: 1px solid black; padding-bottom: 8px;">Message</h4></li>
+                                        <li><a href="" class="li-item"><i class="fa fa-envelope-o icon-inside-msg"></i> John Doe </a></li>
+                                        <li><a href="" class="li-item"><i class="fa fa-envelope-o icon-inside-msg"></i> John Doe </a></li>
+                                        <li><a href="" class="li-item"><i class="fa fa-envelope-o icon-inside-msg"></i> John Doe </a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-togglen settings-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog"></i></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#" class="li-item">Action</a></li>
                                         <li><a href="#" class="li-item">Another action</a></li>
@@ -343,16 +352,45 @@
                     <i class="fa fa-circle fa-small icon-obrollan" aria-hidden="true"></i> &nbsp; Obrollan
                 </div>
                 <ul id="obrollan-content">
-                    <li class="obrollan-item"><a href="#"><img class="avatar" " src="img/icon-user.png" alt="">John Doe</a></li>
-                    <li class="obrollan-item"><a href="#"><img class="avatar" " src="img/icon-user.png" alt="">John Doe</a></li>
-                    <li class="obrollan-item"><a href="#"><img class="avatar" " src="img/icon-user.png" alt="">John Doe</a></li>
-                    <li class="obrollan-item"><a href="#"><img class="avatar" " src="img/icon-user.png" alt="">John Doe</a></li>
+                    <li class="obrollan-item-parent">
+                        <a><img class="avatar" src="img/icon-user.png" alt="">Grup A</a>
+                    </li>
+                    <li class="obrollan-item-parent">
+                        <a><img class="avatar" src="img/icon-user.png" alt="">Grup B</a>
+                    </li>
+                    <li class="obrollan-item-parent">
+                        <a><img class="avatar" src="img/icon-user.png" alt="">Grup C</a>
+                    </li>
+                    <li class="obrollan-item-parent">
+                        <a><img class="avatar" src="img/icon-user.png" alt="">Grup D</a>
+                    </li>
                 </ul>
+            </div>
+            <div id="obrollan-user" class="fixed-bottom hidden-xs">
+                <div class="obrollan-user-inner">
+                    <i class="fa fa-circle fa-small icon-obrollan" aria-hidden="true"></i> &nbsp; Group A
+                </div>
+                <ul id="obrollan-user-content">
+                    <li class="obrollan-item">
+                        <a href="#"><img class="avatar" src="img/icon-user.png" alt="">John Doe</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </li>
+                    <li class="obrollan-item">
+                        <a href="#"><img class="avatar" src="img/icon-user.png" alt="">John Doe</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </li>
+                    <li class="obrollan-item">
+                        <a href="#"><img class="avatar" src="img/icon-user.png" alt="">John Doe</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
             </div>
             <footer id="landing-footer">
                 <div class="landing-footer-inner landing-container">
-                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                        <p>© 2016 PiknikAsik, Inc</p>
+                    <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                        <p class="text-copyright">© 2016 PiknikAsik, Inc</p>
                     </div>
                     <ul class="col-md-6 col-lg-6 hidden-sm hidden-xs">
                         <li><a href=" # ">Terms</a></li>
@@ -363,9 +401,9 @@
             </footer>
         </div>
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js "></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/destinasi.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

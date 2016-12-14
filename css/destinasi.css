@@ -3,7 +3,7 @@ body {
 }
 
 #mainwrapper-inner {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .navbar-default {
@@ -55,6 +55,11 @@ body {
     background-color: red;
 }
 
+.content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #obrollan {
     cursor: pointer;
     position: fixed;
@@ -66,11 +71,28 @@ body {
     background-color: white;
 }
 
+#obrollan-user {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 12000;
+    width: 250px;
+    right: 300px;
+    bottom: 0%;
+    border: 1px solid #eaeaea;
+    background-color: white;
+}
+
 .icon-obrollan {
     color: green;
 }
 
-.obrollan-inner {
+.icon-inside-msg {
+    padding-right: 8px;
+}
+
+.obrollan-inner,
+.obrollan-user-inner {
     padding: 8px;
 }
 
@@ -81,7 +103,16 @@ body {
     background-color: #eaeaea;
 }
 
-.obrollan-item {
+#obrollan-user-content {
+    margin: 0px;
+    max-height: 300px;
+    padding: 8px;
+    overflow: auto;
+    background-color: #eaeaea;
+}
+
+.obrollan-item,
+.obrollan-item-parent {
     padding: 4px;
     list-style: none;
     border-bottom: 1px solid #d0d0d0;
@@ -118,15 +149,24 @@ body {
 }
 
 @media (max-width: 767px) {
+    .logo-header {
+
+        height: 30px;
+        position: relative;
+        margin-top: 8px;
+    }
+    .dropdown-menu {
+        background-color: white !important;
+    }
     .form-width-outer {
         width: 100%;
     }
     .icon-bar {
         background-color: white !important;
     }
-    .navbar-form { 
+    .navbar-form {
         padding: 0px;
-        margin :8px 0;
+        margin: 8px 0;
     }
     .input-group {
         width: 100%;
@@ -134,13 +174,29 @@ body {
     #input-width {
         width: calc(100% - 39px);
     }
+    .col-xs-12 {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
     .caret {
         display: none;
     }
     .navbar-collapse {
         max-height: 100%;
     }
-    .li-item {
-        color: white !important;
+    .navbar-default .navbar-nav > li > ul.dropdown-menu > li > h4 {
+        display: none;
+    }
+    .settings-nav:after {
+        content: "\00a0 \00a0 Settings";
+    }
+    .msg-nav:after {
+        content: "\00a0 \00a0 Message";
+    }
+    .profil-nav:after {
+        content: "\00a0 \00a0 Profil";
+    }
+    .text-copyright {
+        text-align: center;
     }
 }

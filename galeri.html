@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/info.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 </head>
 
-<body>
+<body id="gelap">
    <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <div class="navbar-header">
@@ -69,109 +67,26 @@
                     </div>
                 </nav>
     <div class="row">
-        <div class="col-md-12 col-lg-12 col-sm-12 wadahGambar">
-            <div class="namaWisata">
-                <h3>Gunung Merapi</h3>
-            </div>
-            <img src="img/background_pro.jpg" alt="gambar gede tempat wisata" class="gbrBesar">
-            <a href="galeri.html" class="btn btn-info tombolGallery"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a>
+        <div class="col-md-12 col-lg-12 col-sm-12">
+        <div class="galeri">
+            <div><img src="img/background.jpg" alt="gambar gede tempat wisata"></div>
+            <div><img src="img/summer.jpg" alt=""></div>
+            <div><img src="img/marapi.jpg" alt=""></div>
+        </div>
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <div class="row">
-
-        <div class="col-md-3 col-sm-3 grup-join pull-right">
-            <h3>Plans</h3>
-            <div class="grup">
-                <p><i class="fa fa-calendar ikon" aria-hidden="true"></i> 1 Januari 2017</p>
-                <p><i class="fa fa-money ikon" aria-hidden="true"></i> Rp 350 000;</p>
-                <img src="img/user.png" alt="">
-                <img src="img/user.png" alt="">
-                <img src="img/user.png" alt="">
-                <span class="more-people">4+</span>
-                <a href="#" id="gabung1" class="btn center-block join"><i class="fa fa-hand-o-right " aria-hidden="true"></i> Join</a>
-            </div>
-        </div>
+	  <script type="text/javascript">
+	    $(document).ready(function(){
+	      $('.galeri').slick();
+	    });
+	  </script>
     
-        <div class="col-md-3 col-sm-3 otherloc">
-            <h3>Other Location</h3>
-            <div class="img-otherloc-container">
-                <img src="img/content.jpg">
-                <a href="">Maldives</a>
-            </div>
-            <div class="img-otherloc-container">
-                <img src="img/content.jpg">
-                <a href="">Maldives</a>
-            </div>
-            <div class="img-otherloc-container">
-                <img src="img/content.jpg">
-                <a href="">Maldives</a>
-            </div>
-        </div>
-
-        <div class="col-md-6 col-sm-6 feedback-col">
-            <div class="row info-kondisi">
-                <span><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">-7.538551,110.446916</a></span>
-                <span><i class="fa fa-sun-o" aria-hidden="true"></i> <a href="">Cerah</a></span>
-                <span class="rating">
-                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </span>
-            </div>
-            <h3>Feedback</h3>
-            <div class="row">
-                <div class="feedback">
-                    <img src="img/user.png" alt="">
-                    <a href="">Eudya</a>
-                    <i class="fa fa-star rate-user" aria-hidden="true"></i>
-                    <p class="komentar">destinasi wisata yg hits</p>
-                </div>
-                <div class="feedback">
-                    <img src="img/user.png" alt="">
-                    <a href="">Nikita</a>
-                    <i class="fa fa-star rate-user" aria-hidden="true"></i>
-                    <p class="komentar">tempat wisata yg keren uhuy</p>
-                </div>
-                <div class="feedback">
-                    <img src="img/user.png" alt="">
-                    <a href="">User</a>
-                    <i class="fa fa-star rate-user" aria-hidden="true"></i>
-                    <p class="komentar">komentar</p>
-                </div>
-                <a href="#" class="btn btn-info center-block"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i> More...</a>
-            </div>
-
-        </div>
-        
-        
-    </div>
-
-    <div id="dialog" title="Gabung dengan Grup Piknik?">
-        <p>Dengan menekan tombol Gabung anda bergabung dengan kelompok piknik ini</p>
-    </div>
-
-    <script>
-    $(document).ready(function () {
-        $("#dialog").dialog({
-            autoOpen: false,
-            modal: true,
-            buttons: {
-                "Gabung": function() {
-                  $( this ).dialog( "close" );
-                },
-                "Batal": function() {
-                  $( this ).dialog( "close" );
-                }
-            }
-        });
-        $("#gabung1").click(
-            function () {
-                $("#dialog").dialog('open');
-                return false;
-            }
-        );
-    });
-    </script>
 </body>
 
 </html>

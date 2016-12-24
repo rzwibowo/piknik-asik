@@ -200,3 +200,18 @@ body {
 .grup .ikon {
 	color: #3498db;
 }
+.galeri {
+	margin: 20px auto;
+	width: 1200px;
+	height: 600px;
+	padding: auto;
+}
+.galeri img{
+	margin: 0px auto;
+	width: 1200px;
+	height: 600px;
+	overflow: hidden;
+}
+#gelap{
+	background: black;
+}

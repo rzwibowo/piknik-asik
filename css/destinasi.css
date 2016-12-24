@@ -2,12 +2,41 @@ body {
     font-family: 'Roboto', sans-serif, arial;
 }
 
+.item {
+    padding: 0 5px;
+    ma;
+}
+
+#loading {
+    width: 100%;
+}
+
+.img-responsive {
+    cursor: pointer;
+}
+
+.img_before_loaded {
+    opacity: 0;
+    -moz-transition: opacity 2s;
+    /* Firefox 4 */
+    -webkit-transition: opacity 2s;
+    /* Safari and Chrome */
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
+
 #mainwrapper-inner {
     overflow: hidden;
 }
 
+#content-inner {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 122px);
+}
+
 .navbar-default {
-    margin: 0 -16px 30px -16px;
+    margin: 0 -16px 20px -16px;
     background-color: #3498db;
     border-radius: 0px !important;
 }
@@ -58,6 +87,12 @@ body {
 .content {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+#content-outer {
+    display: none;
+    overflow: hidden;
+    height: calc(100vh - 122px);
 }
 
 #obrollan {
@@ -144,13 +179,110 @@ body {
     display: inline-block;
 }
 
+.viewmap {
+    margin-top: 5px;
+}
+
+#map {
+    height: 100vh;
+}
+
+.caption h3 {
+    margin-top: 10px;
+}
+
 .landing-footer-inner li a {
     margin: 0 12px;
 }
 
+
+/* custom for bootstrap */
+
+.thumbnail {
+    border-radius: 0px;
+}
+
+
+/* custom for infobox */
+
+.img_width {
+    width: 100%;
+}
+
+.outer_infobox {
+    overflow: auto;
+    background: white;
+    max-width: 240px;
+    box-shadow: : 5px 5px .7 #333;
+    max-height: 540px;
+}
+
+.img_box {
+    background-color: black;
+    max-width: 240px;
+}
+
+.img_box img {
+    margin: 0 auto;
+    max-height: 240px;
+}
+
+.arrowright {
+    float: right;
+    opacity: .7;
+    margin-right: 5px;
+    font-size: 25px;
+}
+
+.arrowleft {
+    float: left;
+    opacity: .7;
+    margin-left: 5px;
+    font-size: 25px;
+}
+
+.like {
+    float: right;
+    display: inline-block;
+}
+
+#outer_desc_box {
+    max-width: 240px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.userbox {
+    background-color: white;
+    color: #333;
+}
+
+.userbox p {
+    text-align: center;
+    font-weight: 900;
+}
+
+.title {
+    float: left;
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
+.outer_infobox:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: -10px;
+    left: 130px;
+}
+
 @media (max-width: 767px) {
     .logo-header {
-
         height: 30px;
         position: relative;
         margin-top: 8px;
@@ -174,7 +306,8 @@ body {
     #input-width {
         width: calc(100% - 39px);
     }
-    .col-xs-12 {
+    .col-xs-12,
+    .item {
         padding-right: 0px;
         padding-left: 0px;
     }
